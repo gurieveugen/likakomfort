@@ -1,0 +1,288 @@
+textarea:hover,
+textarea:focus,
+input[type=text]:hover,
+input[type=text]:focus,
+input[type=email]:hover,
+input[type=email]:focus{
+	box-shadow: 0 0 5px #11cfff;
+	border-color: #11cfff;
+}
+
+body {
+	background: url(img/bg_blue.jpg) no-repeat;
+
+	-webkit-background-size: 100% 50%;
+	-moz-background-size: 100% 50%;
+	background-size: 100% 50%;
+	font-family: 'CenturyGothicRegular', arial;
+}
+
+button:before{
+	background: url(img/bg_block_address_blue.jpg);
+}
+
+button:hover:after{
+	background: #30A2C2;
+}
+
+h4, h2{
+	color: black !important;
+}
+
+hr{
+	border-color: black;
+}
+
+a{
+	color: black;
+}
+
+a:hover{
+	color: black;
+}
+
+.main-content header nav.nav-line{
+	border-bottom: 1px solid #11cfff;
+}
+
+.main-content footer{
+	border-top: 1px solid #11cfff;
+}
+
+h1.logo{
+	background: url(img/logo_lika_new_blue.png) no-repeat;
+}
+
+.main-menu li a{
+	color: #747474;
+}
+
+.main-menu li.current-menu-item a,
+.main-menu li a:hover{
+	color: #11cfff;
+	box-shadow: 0 2px 0 #11cfff;
+}
+
+.sidebar-left:after{
+	background: url(img/sidebar_left_shadow.png);
+}
+
+.left-menu .current-menu-item a{
+	color: black;
+}
+
+.left-menu li a{
+	color: #747474;
+}
+
+.left-menu li a:hover{
+	color: black;
+}
+
+.left-menu li.current-menu-item a:before,
+.left-menu li.current-category-ancestor a:before,
+.left-menu li a:hover:before{
+	-webkit-box-shadow: -6px 0 0 #11cfff;
+	box-shadow: -6px 0 0 #11cfff;
+}
+
+.sub-menu:before{
+	border-left: 1px solid #dadada;
+}
+
+.current-menu-item .sub-menu li a,
+.sub-menu li a{
+	color: #787878;
+}
+
+.sub-menu li.current-menu-item a,
+.current-menu-item .sub-menu li a:hover,
+.sub-menu li a:hover{	
+	color: black;
+}
+
+.left-menu li.current-category-ancestor .sub-menu li.current-menu-item a:before,
+.left-menu li.current-category-ancestor .sub-menu li a:hover:before,
+.left-menu li.current-menu-item .sub-menu li.current-menu-item a:before,
+.left-menu li.current-menu-item .sub-menu li a:hover:before{
+	-webkit-box-shadow: -2px 0 0 #11cfff;
+	box-shadow: -2px 0 0 #11cfff;
+}
+
+.block-address{
+	background: url(img/bg_block_address_blue.jpg);
+}
+
+.block-latest-news b,
+.block-order-by b,
+.block-search-by-price b{
+	color: black;
+}
+
+.block-latest-news hr{
+	border-color: #11cfff;
+}
+
+.block-latest-news article small{
+	color: #949494;
+}
+
+.block-categories{
+	border: 1px solid #11cfff;
+}
+
+.block-categories li:before{
+	background: #11cfff;
+}
+
+.content-wrap article small{
+	color: #8e8e8e;
+}
+
+.carousel-indicators li.active{
+	background: #11cfff;
+}
+
+.carousel-indicators li{
+	border: 3px solid rgba(183, 119, 13, 1);
+}
+
+
+.carousel-indicators .active{
+	background: rgba(183, 119, 13, 1);
+}
+
+.product  header nav a{
+	color: #B4B4B4;
+}
+
+.product  header nav a:hover{
+	color: black;
+}
+
+.product figure .circle{
+	background: #a8e969;
+}
+
+.product hr{
+	border-color: #C0C0C0;
+}
+
+.product p.price{
+	border: 1px solid #11cfff;
+	color: #11cfff;
+}
+
+.product figure figcaption a{
+	color: black;
+}
+
+p.price{
+	border: 1px solid #11cfff;
+	color: #11cfff;
+}
+
+.tip hr{
+	border-color: #11cfff;
+}
+
+.tip a b{
+	color: black;
+}
+
+
+.tip a:hover{
+	color: black;
+}
+
+.comments b{
+	color: black;
+}
+
+.thumbs .thumbs-images .active{
+	border: 1px solid #11cfff;
+}
+
+.thumbs .thumbs-controls .prev-image{
+	background: url(img/arrow_prev.png);
+}
+
+.thumbs .thumbs-controls .next-image{
+	background: url(img/arrow_next.png);
+}
+
+.cart-title{
+	color: black;
+}
+
+.cart-table{
+	border-bottom: 1px solid #dadada;
+}
+
+.cart-table thead tr{	
+	color: black;	
+}
+
+.cart-table thead tr th{
+	border: 1px solid #11cfff;	
+}
+
+.form-order input,
+.form-order textarea{
+	border-color: #11cfff;
+}
+
+.form-order b{
+	color: black;
+}
+
+.contacts-title{
+	color: black;
+}
+
+h4.compare,
+.block-cart b{
+	color: black;
+}
+
+footer a h1.logo2{
+	background: url(img/logo_blue.png) no-repeat;
+}
+
+.bordered:hover{
+	border-color: #11cfff;	
+}
+
+.sale-wrap header nav div.separator {
+	background: none repeat scroll 0 0 #11cfff;
+}
+
+.icon-phone{
+	background: url(img/icon_phone_blue.png) no-repeat;
+}
+
+.icon-mail{
+	background: url(img/icon_mail_blue.png) no-repeat;
+}
+
+.i-phone{
+	background: url(img/i_phone_blue.png) no-repeat;	
+}
+
+.i-mail{
+	background: url("img/i_mail_blue.png") no-repeat scroll 0 7px rgba(0, 0, 0, 0);	
+}
+
+.base-color-text{
+	color: #11cfff;
+}
+
+.block-cart:before{
+	background: url('img/icon_cart_blue.png') no-repeat;
+	content: '';
+	width: 27px;
+	height: 23px;
+	position: absolute;
+	top: 17px;
+	left: 13px;
+}

@@ -1,0 +1,277 @@
+textarea:hover,
+textarea:focus,
+input[type=text]:hover,
+input[type=text]:focus,
+input[type=email]:hover,
+input[type=email]:focus{
+	box-shadow: 0 0 5px #b7770d;
+	border-color: #b7770d;
+}
+
+body {
+	background: url(img/bg.jpg);
+
+	font-family: 'CenturyGothicRegular', arial;
+}
+
+button:before{
+	background: url(img/bg_block_address.jpg);
+}
+
+button:hover:after{
+	background: #f3ab3e;
+}
+
+h4, h2{
+	color: black !important;
+}
+
+hr{
+	border-color: black;
+}
+
+a{
+	color: black;
+}
+
+a:hover{
+	color: black;
+}
+
+.main-content header nav.nav-line{
+	border-bottom: 1px solid #b7770d;
+}
+
+.main-content footer{
+	border-top: 1px solid #b7770d;
+}
+
+h1.logo{
+	background: url(img/logo_lika_new_brown.png) no-repeat;
+}
+
+.main-menu li a{
+	color: #747474;
+}
+
+.main-menu li.current-menu-item a,
+.main-menu li a:hover{
+	color: #b7770d;
+	box-shadow: 0 2px 0 #b7770d;
+}
+
+.sidebar-left:after{
+	background: url(img/sidebar_left_shadow.png);
+}
+
+.left-menu .current-menu-item a{
+	color: black;
+}
+
+.left-menu li a{
+	color: #747474;
+}
+
+.left-menu li a:hover{
+	color: black;
+}
+
+.left-menu li.current-menu-item a:before,
+.left-menu li.current-category-ancestor a:before,
+.left-menu li a:hover:before{
+	-webkit-box-shadow: -6px 0 0 #b7770d;
+	box-shadow: -6px 0 0 #b7770d;
+}
+
+.sub-menu:before{
+	border-left: 1px solid #dadada;
+}
+
+.current-menu-item .sub-menu li a,
+.sub-menu li a{
+	color: #787878;
+}
+
+.sub-menu li.current-menu-item a,
+.current-menu-item .sub-menu li a:hover,
+.sub-menu li a:hover{	
+	color: black;
+}
+
+.left-menu li.current-category-ancestor .sub-menu li.current-menu-item a:before,
+.left-menu li.current-category-ancestor .sub-menu li a:hover:before,
+.left-menu li.current-menu-item .sub-menu li.current-menu-item a:before,
+.left-menu li.current-menu-item .sub-menu li a:hover:before{
+	-webkit-box-shadow: -2px 0 0 #b7770d;
+	box-shadow: -2px 0 0 #b7770d;
+}
+
+.block-address{
+	background: url(img/bg_block_address.jpg);
+}
+
+.block-latest-news b,
+.block-order-by b,
+.block-search-by-price b{
+	color: black;
+}
+
+.block-latest-news hr{
+	border-color: #b7770d;
+}
+
+.block-latest-news article small{
+	color: #949494;
+}
+
+.block-categories{
+	border: 1px solid #b7770d;
+}
+
+.block-categories li:before{
+	background: #b7770d;
+}
+
+.content-wrap article small{
+	color: #8e8e8e;
+}
+
+.carousel-indicators li.active{
+	background: #B7770D;
+}
+
+.carousel-indicators li{
+	border: 3px solid rgba(183, 119, 13, 1);
+}
+
+
+.carousel-indicators .active{
+	background: rgba(183, 119, 13, 1);
+}
+
+.product  header nav a{
+	color: #B4B4B4;
+}
+
+.product  header nav a:hover{
+	color: black;
+}
+
+.product figure .circle{
+	background: #a8e969;
+}
+
+.product hr{
+	border-color: #C0C0C0;
+}
+
+.product p.price{
+	border: 1px solid #b7770d;
+	color: #b7770d;
+}
+
+.product figure figcaption a{
+	color: black;
+}
+
+p.price{
+	border: 1px solid #b7770d;
+	color: #b7770d;
+}
+
+.tip hr{
+	border-color: #b7770d;
+}
+
+.tip a b{
+	color: black;
+}
+
+
+.tip a:hover{
+	color: black;
+}
+
+.comments b{
+	color: black;
+}
+
+.thumbs .thumbs-images .active{
+	border: 1px solid #b7770d;
+}
+
+.thumbs .thumbs-controls .prev-image{
+	background: url(img/arrow_prev.png);
+}
+
+.thumbs .thumbs-controls .next-image{
+	background: url(img/arrow_next.png);
+}
+
+.cart-title{
+	color: black;
+}
+
+.cart-table{
+	border-bottom: 1px solid #dadada;
+}
+
+.cart-table thead tr{	
+	color: black;	
+}
+
+.cart-table thead tr th{
+	border: 1px solid #b7770d;	
+}
+
+.form-order input,
+.form-order textarea{
+	border-color: #b7770d;
+}
+
+.form-order b{
+	color: black;
+}
+
+.contacts-title{
+	color: black;
+}
+
+h4.compare,
+.block-cart b{
+	color: black;
+}
+
+footer a h1.logo2{
+	background: url(img/logo.png) no-repeat;
+}
+
+.bordered:hover{
+	border-color: #b7770d;	
+}
+
+.sale-wrap header nav div.separator {
+	background: none repeat scroll 0 0 #B7770D;
+}
+
+.icon-phone{
+	background: url(img/icon_phone.png) no-repeat;
+}
+
+.icon-mail{
+	background: url(img/icon_mail.png) no-repeat;
+}
+
+.base-color-text{
+	color: #b7770d;
+}
+
+.block-cart:before{
+	background: url('img/icon_cart.png') no-repeat;
+	content: '';
+	width: 27px;
+	height: 23px;
+	position: absolute;
+	top: 17px;
+	left: 13px;
+}

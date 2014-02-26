@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'PGIsadoraCyrProRegular';
+    src: url('isadora.eot');
+    src: url('isadora.eot') format('embedded-opentype'),
+         url('isadora.woff') format('woff'),
+         url('isadora.ttf') format('truetype'),
+         url('isadora.svg#PGIsadoraCyrProRegular') format('svg');
+}
