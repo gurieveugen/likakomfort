@@ -56,7 +56,7 @@ if($children && !is_parent_menu_item($term->name))
 				$items[] = array(
 					'title'   => get_the_title(),
 					'content' => get_the_excerpt(),
-					'thumb'   => get_the_post_thumbnail(get_the_ID()),
+					'thumb'   => get_the_post_thumbnail(get_the_ID(), 'thumbnail'),
 					'id'      => get_the_ID()
 					);	
 			}
@@ -66,7 +66,7 @@ if($children && !is_parent_menu_item($term->name))
 			$items[] = array(
 					'title'   => get_the_title(),
 					'content' => get_the_excerpt(),
-					'thumb'   => get_the_post_thumbnail(get_the_ID()),
+					'thumb'   => get_the_post_thumbnail(get_the_ID(), 'thumbnail'),
 					'id'      => get_the_ID()
 					);	
 		}

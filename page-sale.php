@@ -33,7 +33,7 @@ if($most_products)
 				$str.= '<figure>';
 				$str.= $discount;
 				$str.= '<a href="'.get_permalink($most_products[$x]->ID).'" class="cat-image">';
-				$str.= get_the_post_thumbnail($most_products[$x]->ID);
+				$str.= get_the_post_thumbnail($most_products[$x]->ID, 'thumbnail');
 				$str.= '</a>';
 				$str.= '<figcaption><a href="'.get_permalink($most_products[$x]->ID).'">'.$most_products[$x]->post_title.'</a></figcaption>';
 				$str.= '</figure><hr>';

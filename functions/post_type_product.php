@@ -384,7 +384,7 @@ function get_special_offers_html($max_items = 3)
 				$str.= '<div class="span4 bordered">';
 				$str.= '<figure>';
 				$str.= '<a href="'.get_permalink($value->ID).'" class="cat-image">';
-				$str.= get_the_post_thumbnail($value->ID);
+				$str.= get_the_post_thumbnail($value->ID, 'thumbnail');
 				$str.= '</a>';
 				$str.= '<figcaption><a href="'.get_permalink($value->ID).'">'.$value->post_title.'</a></figcaption>';
 				$str.= '</figure><hr>';
@@ -427,7 +427,7 @@ function get_most_products_html($max_items = 3)
 				$str.= '<div class="span4 bordered">';
 				$str.= '<figure>';
 				$str.= '<a href="'.get_permalink($value->ID).'" class="cat-image">';
-				$str.= get_the_post_thumbnail($value->ID);
+				$str.= get_the_post_thumbnail($value->ID, 'thumbnail');
 				$str.= '</a>';
 				$str.= '<figcaption><a href="'.get_permalink($value->ID).'">'.$value->post_title.'</a></figcaption>';
 				$str.= '</figure><hr>';
@@ -465,7 +465,7 @@ function get_watched_html($max = 3)
 			$str.= '<div class="span4 bordered jcarousel-item">';
 			$str.= '<figure>';
 			$str.= '<a href="'.get_permalink($value->ID).'" class="cat-image">';
-			$str.= get_the_post_thumbnail($value->ID);
+			$str.= get_the_post_thumbnail($value->ID, 'thumbnail');
 			$str.= '</a>';
 			$str.= '<figcaption><a href="'.get_permalink($value->ID).'">'.$value->post_title.'</a></figcaption>';
 			$str.= '</figure><hr>';
@@ -528,7 +528,7 @@ function get_also_products_html($cat_id, $exclude = 0, $max_items = 3)
 				$str.= '<div class="span4 bordered">';
 				$str.= '<figure>';
 				$str.= '<a href="'.get_permalink($value->ID).'" class="cat-image">';
-				$str.= get_the_post_thumbnail($value->ID);
+				$str.= get_the_post_thumbnail($value->ID, 'thumbnail');
 				$str.= '</a>';
 				$str.= '<figcaption><a href="'.get_permalink($value->ID).'">'.$value->post_title.'</a></figcaption>';
 				$str.= '</figure><hr>';

@@ -658,7 +658,7 @@ footer a h1.logo2{
 }
 
 .product figure{
-	height: 175px;
+	height: 195px;
 	margin: 10px 0 0 0;
 	text-align: center;	
 	position: relative;
@@ -1081,7 +1081,7 @@ button.close:hover:after{
 
 .cat-image{
 	display: block;
-	height: 130px;
+	height: 150px;
 	overflow: hidden;
 }
 
