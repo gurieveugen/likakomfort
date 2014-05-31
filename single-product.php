@@ -1,12 +1,16 @@
 <? get_header(); ?>
+
 			<aside class="content-wrap">				
 				<?php 
+				the_breadcrumb();
 				if(is_active_sidebar('sidebar_right'))
 				{
 					dynamic_sidebar('sidebar_right');
 				}		
 				?>				
 				<?php while ( have_posts() ) : the_post(); 
+				$meta = get_post_meta(get_the_ID(), 'product_product_type', true );
+
 				addWatched(get_the_ID());
 				?>
 					<article>
@@ -44,6 +48,24 @@
 									<div class="row-fluid">
 										<div class="span6"><?php echo $price_text; ?></div>
 										<div class="span6"><button class="btn-buy" onclick="buy(<?php the_ID() ?>)">Придбати</button></div>
+										<?php 
+										if($meta)
+										{
+											foreach ($meta as $key => &$el) 
+											{
+												$items = explode('|', $el['items']);												
+												if($items)
+												{
+													echo '<label class="select-control" for="product_product_type<?php echo $key; ?>">'.$el['title'].'<select name="product_product_type'.$key.'" id="product_product_type'.$key.'">';
+													foreach ($items as $key2 => $value2) 
+													{
+														printf('<option value="%s">%s</option>', $key2, $value2);
+													}	
+													echo '</select></label>';
+												}
+											}
+										}
+										?>
 									</div>		
 									<?php
 									$all_images_from_post = get_all_images_from_post(get_the_ID());
@@ -63,9 +85,8 @@
 									}
 									?>
 								</div>
-								<div class="span6">
-									<?php the_content(); ?>	
-									
+								<div class="text-arial cut-content">
+									<?php the_content(); ?>										
 								</div>
 							</div>
 							<div class="row-fluid">								

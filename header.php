@@ -107,7 +107,8 @@ else
 				wp_nav_menu(array(
 					'menu'       => 'LeftMenu',
 					'container'  => 'ul',
-					'menu_class' => 'left-menu'
+					'menu_class' => 'left-menu',
+					'walker'     => new Custom_Walker_Nav_Menu
 				  )); 
 				?>
 				

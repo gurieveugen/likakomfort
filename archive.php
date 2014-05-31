@@ -1,6 +1,7 @@
 <? get_header(); ?>
 <aside class="content-wrap">				
 	<?php 
+	the_breadcrumb();
 	if(is_active_sidebar('sidebar_right'))
 	{
 		dynamic_sidebar('sidebar_right');

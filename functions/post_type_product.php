@@ -90,7 +90,7 @@ function get_two_specifications($id1, $id2)
 		foreach ($first as $key => $value) 
 		{
 			$output.= '<tr>';
-			$output.= '<td style="width: 20%;">'.$key.'</td>';
+			$output.= '<td style="width: 20%; border-right: 1px solid black;">'.$key.'</td>';
 			$output.= '<td style="width: 40%;">'.$value.'</td>';
 			$output.= '<td style="width: 40%;">'.$second[$key].'</td>';
 			$output.= '</tr>';
@@ -462,25 +462,33 @@ function get_watched_html($max = 3)
 		foreach ($arr as $key => $value) 
 		{
 			$value = get_post($value);
-			$str.= '<div class="span4 bordered jcarousel-item">';
+			$str.= '<div class="span4">';
+			$str.= '<div class="opjat_peredeluvajem_block">';
 			$str.= '<figure>';
 			$str.= '<a href="'.get_permalink($value->ID).'" class="cat-image">';
 			$str.= get_the_post_thumbnail($value->ID, 'thumbnail');
 			$str.= '</a>';
 			$str.= '<figcaption><a href="'.get_permalink($value->ID).'">'.$value->post_title.'</a></figcaption>';
 			$str.= '</figure><hr>';
-			$str.= '<span>'.$value->post_excerpt.'</span>';
+			$str.= '<span>'.get_short_string(50, $value->post_excerpt).'</span>';
 			$str.= '<input name="compare'.$value->ID.'" id="compare'.$value->ID.'" data-id="'.$value->ID.'" type="checkbox"><label for="compare'.$value->ID.'">Порівняти</label>';
+			$str.= '</div><!-- opjat_peredeluvajem_block -->';
+			$str.= '<div class="row-fluid">';
+			$str.= '<div class="span6">';
 			$price = trim(get_post_meta($value->ID, 'price', TRUE));
 			if(empty($price))
 			{
-				$str.= '<p class="price">Уточніть</p>';
+				$str.= '<p class="price-text">Уточніть</p>';
 			}
 			else
 			{
-				$str.= '<p class="price">'.$price.' грн.</p>';
+				$str.= '<p class="price-text">'.$price.' грн.</p>';
 			}
-			$str.= '<button onclick="buy('.$value->ID.')">Придбати</button>';
+			$str.= '</div>';
+			$str.= '<div class="span6">';
+			$str.= '<button class="btn-product-button" onclick="buy('.$value->ID.')">Придбати</button>';
+			$str.= '</div>';
+			$str.= '</div>';
 			$str.= '</div>';
 		}	
 		$str.= '</div></article><!-- product (Most Products) end -->';
@@ -525,25 +533,33 @@ function get_also_products_html($cat_id, $exclude = 0, $max_items = 3)
 			if($x < 3)
 			{
 				$x++;
-				$str.= '<div class="span4 bordered">';
+				$str.= '<div class="span4">';
+				$str.= '<div class="opjat_peredeluvajem_block">';
 				$str.= '<figure>';
 				$str.= '<a href="'.get_permalink($value->ID).'" class="cat-image">';
 				$str.= get_the_post_thumbnail($value->ID, 'thumbnail');
 				$str.= '</a>';
 				$str.= '<figcaption><a href="'.get_permalink($value->ID).'">'.$value->post_title.'</a></figcaption>';
 				$str.= '</figure><hr>';
-				$str.= '<span>'.$value->post_excerpt.'</span>';
+				$str.= '<span>'.get_short_string(50, $value->post_excerpt).'</span>';
 				$str.= '<input name="compare'.$value->ID.'" id="compare'.$value->ID.'" data-id="'.$value->ID.'" type="checkbox"><label for="compare'.$value->ID.'">Порівняти</label>';
+				$str.= '</div><!-- opjat_peredeluvajem_block -->';
+				$str.= '<div class="row-fluid">';
+				$str.= '<div class="span6">';
 				$price = trim(get_post_meta($value->ID, 'price', TRUE));
 				if(empty($price))
 				{
-					$str.= '<p class="price">Уточніть</p>';
+					$str.= '<p class="price-text">Уточніть</p>';
 				}
 				else
 				{
-					$str.= '<p class="price">'.$price.' грн.</p>';
+					$str.= '<p class="price-text">'.$price.' грн.</p>';
 				}
-				$str.= '<button onclick="buy('.$value->ID.')">Придбати</button>';
+				$str.= '</div>';
+				$str.= '<div class="span6">';
+				$str.= '<button class="btn-product-button" onclick="buy('.$value->ID.')">Придбати</button>';
+				$str.= '</div>';
+				$str.= '</div>';
 				$str.= '</div>';
 			}			
 		}
@@ -748,19 +764,23 @@ function get_all_images_from_post($id)
 		'numberposts' => -1,
 		'post_status' => null,
 		'post_parent' => $id
-	 );
-	  
-	$attachments = get_posts( $args );
-	if ( $attachments ) 
-	{
+	);
 
-		foreach ( $attachments as $attachment ) 
+	$thumbnail_id = get_post_thumbnail_id($id);
+	$images       = null;  
+	$attachments  = get_posts($args);
+	if ($attachments) 
+	{
+		foreach($attachments as $attachment) 
 		{	
-			$tmp = wp_get_attachment_image_src($attachment->ID, 'thumbnail');
-		   	if($tmp[0])
-		   	{
-		   		$images[] = array('src' => $tmp[0], 'id' => $attachment->ID);
-		   	}      		  		   
+			if($attachment->ID != $thumbnail_id)
+			{
+				$tmp = wp_get_attachment_image_src($attachment->ID, 'thumbnail');
+			   	if($tmp[0])
+			   	{
+			   		$images[] = array('src' => $tmp[0], 'id' => $attachment->ID);
+			   	}      		  		   	
+			}
 		}
 	}
 	return $images;

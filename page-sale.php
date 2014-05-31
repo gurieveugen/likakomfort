@@ -27,8 +27,8 @@ if($most_products)
 			$x = $i + $y;
 			if(isset($most_products[$x]))
 			{
-				$discount      = intval(get_post_meta($most_products[$x]->ID, 'discount', TRUE));
-				$discount      = ($discount > 0) ? '<div class="circle"><span>'.$discount.'</span></div>' : '';
+				$discount      = get_post_meta($most_products[$x]->ID, 'discount', TRUE);
+				$discount      = '<div class="circle"><span>'.$discount.'</span></div>';
 				$str.= '<div class="span4 bordered">';
 				$str.= '<figure>';
 				$str.= $discount;

@@ -44,6 +44,30 @@ jQuery( document ).ready(function()
 			});			
 		}
 	}
+
+	jQuery('#search-by-price').submit(function(e){		
+		var start_price = jQuery("[name=start_price]").val();
+		var end_price   = jQuery("[name=end_price]").val();
+
+		jQuery.ajax({ 
+			url: "/wp-admin/admin-ajax.php?action=search_by_price",
+			type: "POST",
+			dataType: 'json',
+			data: { search_by_price: "true",
+					start_price: start_price,
+					end_price: end_price
+			},		
+			success: function(data)
+			{	
+				return true;		
+			},
+			error: function()
+			{
+				return false;
+			}
+		});
+	});
+	
 });
 
 function check_input_checked()
@@ -199,7 +223,7 @@ function search_by_price()
 		},		
 		success: function(data)
 		{	
-
+			jQuery('#search-by-price').trigger('submit');
 		}
 	});
 }

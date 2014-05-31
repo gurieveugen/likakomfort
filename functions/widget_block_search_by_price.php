@@ -33,14 +33,14 @@ class search_by_price extends WP_Widget
 
 		if(isset($_SESSION["start_price"]) && isset($_SESSION["end_price"]))
 		{
-			$start_price = $_SESSION["start_price"];
-			$end_price   = $_SESSION["end_price"];
+			$start_price = '';
+			$end_price   = '';
 		}
 		
 
 		echo '<div class="block-search-by-price">';
 		echo '<b>'.$title.'</b>';
-		echo '<form action="" method="post" onsubmit="search_by_price()"><label for="start_price">від:&nbsp;</label><input type="text" name="start_price" required value="'.$start_price.'"><label for="end_price">&nbsp;до:&nbsp;</label><input type="text" name="end_price" required value="'.$end_price.'"><button type="submit">Пошук</button></form></div><!-- block-search-by-price end -->';
+		echo '<form id="search-by-price" action="" method="get" ><label for="start_price">від:&nbsp;</label><input type="text" name="start_price" required value="'.$start_price.'"><label for="end_price">&nbsp;до:&nbsp;</label><input type="text" name="end_price" required value="'.$end_price.'"><button type="submit">Пошук</button></form></div><!-- block-search-by-price end -->';
     }
 
     /**

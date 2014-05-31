@@ -1,50 +1,5 @@
 @import "css/bootstrap.css";
 
-@font-face {
-    font-family: 'CenturyGothicRegular';
-    src: url('css/fonts/gothic.eot');
-    src: url('css/fonts/gothic.eot') format('embedded-opentype'),
-         url('css/fonts/gothic.woff') format('woff'),
-         url('css/fonts/gothic.ttf') format('truetype'),
-         url('css/fonts/gothic.svg#CenturyGothicRegular') format('svg');
-}
-
-@font-face {
-    font-family: 'CenturyGothicBold';
-    src: url('css/fonts/gothicb.eot');
-    src: url('css/fonts/gothicb.eot') format('embedded-opentype'),
-         url('css/fonts/gothicb.woff') format('woff'),
-         url('css/fonts/gothicb.ttf') format('truetype'),
-         url('css/fonts/gothicb.svg#CenturyGothicBold') format('svg');
-}
-
-@font-face {
-    font-family: 'CenturyGothicBoldItalic';
-    src: url('css/fonts/gothicbi.eot');
-    src: url('css/fonts/gothicbi.eot') format('embedded-opentype'),
-         url('css/fonts/gothicbi.woff') format('woff'),
-         url('css/fonts/gothicbi.ttf') format('truetype'),
-         url('css/fonts/gothicbi.svg#CenturyGothicBoldItalic') format('svg');
-}
-
-@font-face {
-    font-family: 'CenturyGothicItalic';
-    src: url('css/fonts/gothici.eot');
-    src: url('css/fonts/gothici.eot') format('embedded-opentype'),
-         url('css/fonts/gothici.woff') format('woff'),
-         url('css/fonts/gothici.ttf') format('truetype'),
-         url('css/fonts/gothici.svg#CenturyGothicItalic') format('svg');
-}
-
-@font-face {
-    font-family: 'PGIsadoraCyrProRegular';
-    src: url('css/fonts/isadora.eot');
-    src: url('css/fonts/isadora.eot') format('embedded-opentype'),
-         url('css/fonts/isadora.woff') format('woff'),
-         url('css/fonts/isadora.ttf') format('truetype'),
-         url('css/fonts/isadora.svg#PGIsadoraCyrProRegular') format('svg');
-}
-
 textarea,
 input[type=text],
 input[type=email]{
@@ -56,17 +11,18 @@ input[type=email]{
 }
 
 body{
-	font-family: 'CenturyGothicRegular', arial;
+	font-family: arial;
 }
 
 label{
-	font-family: 'CenturyGothicRegular', arial;
+	font-family: arial;
 	font-size: 14px;
 }
 
 button{
 	color: white;
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	font-size: 12px;
 	border: none;
 	background: transparent;
@@ -101,8 +57,8 @@ button:hover:after{
 }
 
 h4, h2{
-	font-family: 'CenturyGothicBold', arial;	
-	font-weight: normal;
+	font-family: arial;	
+	font-weight: bold;
 }
 
 hr{
@@ -110,19 +66,19 @@ hr{
 }
 
 input::-webkit-input-placeholder{
-	font-family: 'CenturyGothicRegular', arial;
+	font-family: arial;
 }
 
 input:-moz-placeholder {
-	font-family: 'CenturyGothicRegular', arial;
+	font-family: arial;
 }
 
 textarea::-webkit-textarea-placeholder{
-	font-family: 'CenturyGothicRegular', arial;
+	font-family: arial;
 }
 
 textarea:-moz-placeholder {
-	font-family: 'CenturyGothicRegular', arial;
+	font-family: arial;
 }
 
 #map-canvas{
@@ -210,7 +166,8 @@ footer a h1.logo2{
 	padding: 9px 7px 25px 7px;
 	text-transform: uppercase;	
 	display: block;
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	font-size: 14px;
 
 }
@@ -261,7 +218,8 @@ footer a h1.logo2{
 }
 
 .left-menu li a{
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	font-size: 14px;	
 	text-transform: uppercase;
 	position: relative;
@@ -308,7 +266,7 @@ footer a h1.logo2{
 
 .current-menu-item .sub-menu li a,
 .sub-menu li a{
-	font-family: 'CenturyGothicRegular', arial;	
+	font-family: arial;	
 	text-transform: none;
 	padding: 0;
 }
@@ -316,7 +274,8 @@ footer a h1.logo2{
 .sub-menu li.current-menu-item a,
 .current-menu-item .sub-menu li a:hover,
 .sub-menu li a:hover{
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	text-decoration: none;
 }
 
@@ -340,7 +299,8 @@ footer a h1.logo2{
 	width: 220px;
 	border-radius: 5px;
 	color: white;
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	padding: 18px;
 	margin: 82px 0 0 0;
 }
@@ -367,8 +327,8 @@ footer a h1.logo2{
 .block-latest-news b,
 .block-order-by b,
 .block-search-by-price b{
-	font-family: 'CenturyGothicBold', arial;
-	font-weight: normal;
+	font-family: arial;
+	font-weight: bold;
 	text-transform: uppercase;	
 }
 
@@ -383,7 +343,7 @@ footer a h1.logo2{
 
 .block-order-by ul li a{
 	color: black;
-	font-size: 12px;	
+	font-size: 14px;	
 }
 
 .block-latest-news{
@@ -405,9 +365,10 @@ footer a h1.logo2{
 }
 
 .block-latest-news article small{
-	font-family: 'CenturyGothicRegular', arial;
+	font-family: arial;
 	font-size: 12px;	
 	display: block;
+	color: #005580;
 }
 
 .block-social{
@@ -446,7 +407,7 @@ footer a h1.logo2{
 	list-style: none;
 	display: inline-block;	
 	border-radius: 5px;
-	height: 35px;
+	min-height: 35px;
 	padding: 0 10px;
 	margin: 0 0 10px 21px;
 }
@@ -473,12 +434,14 @@ footer a h1.logo2{
 	display: block;
 	padding: 0 8px;
 	line-height: 35px;	
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	color: #C0C0C0;
 }
 
 .block-categories li a:hover{
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	text-decoration: none;
 	color: black;
 }
@@ -597,7 +560,8 @@ footer a h1.logo2{
 .product  header nav a{
 	padding: 0 20px;
 	text-transform: uppercase;
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 }
 
 .product  header nav a:hover{
@@ -616,18 +580,19 @@ footer a h1.logo2{
 }
 
 .product figure .circle span{
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	color: white;
 	line-height: 50px;
 }
-
+/*
 .product figure .circle span:before{
 	content: "-";
 }
 
 .product figure .circle span:after{
 	content: "%";
-}
+}*/
 
 .product header:before{
 	content: "";
@@ -654,7 +619,8 @@ footer a h1.logo2{
 	color: #b7770d;
 	line-height: 60px;
 	font-size: 18px;
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 }
 
 .product figure{
@@ -666,7 +632,8 @@ footer a h1.logo2{
 .product figure figcaption{
 	position: absolute;
 	text-align: left;
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	bottom: 5px;
 }
 
@@ -677,7 +644,7 @@ footer a h1.logo2{
 
 .product span{
 	display: block;
-	height: 70px;
+	height: 50px;
 }
 
 
@@ -686,7 +653,8 @@ footer a h1.logo2{
 	width: 160px;
 	height: 35px;
 	background: transparent;	
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	margin: 29px auto 0 auto;
 	font-size: 14px;
 	display: block;
@@ -705,7 +673,8 @@ p.price{
 	width: 100%;
 	height: 35px;
 	background: transparent;	
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	margin: 0 auto;
 	font-size: 14px;
 	display: block;
@@ -744,8 +713,8 @@ p.price{
 .tip a b{
 	margin: 17px 0 0 0;	
 	display: block;
-	font-weight: normal;
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 }
 
 .tip hr{	
@@ -879,7 +848,8 @@ article .tip a img{
 }
 
 .cart-title{	
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	display: block;
 	margin: 0 0 18px 0;
 }
@@ -920,18 +890,18 @@ article .tip a img{
 }
 
 .form-order b{
-	font-family: 'CenturyGothicBold', arial;
-	font-weight: normal;
+	font-family: arial;
+	font-weight: bold;
 	display: block;
 	margin: 0 0 20px 0; 
 }
 
 
 .contacts-title{
-	font-family: 'CenturyGothicBold', arial;
+	font-family: arial;
+	font-weight: bold;
 	display: block;
 	margin: 0 0 17px 0;
-	font-weight: normal;
 }
 
 .icon-phone{
@@ -998,8 +968,8 @@ article .tip a img{
 }
 
 .block-categories .block-categories-active{
-	font-family: 'CenturyGothicBold', arial;
-	font-weight: normal;
+	font-family: arial;
+	font-weight: bold;
 }
 
 li.block-categories-active a{
@@ -1100,4 +1070,95 @@ button.close:hover:after{
 
 .product .bordered label{
 	margin-top: 10px;
+}
+
+.opjat_peredeluvajem_block{
+	height: 322px;
+	border: 1px solid #c0c0c0;
+	border-radius: 5px;
+	padding: 10px;
+	font-family: arial;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.opjat_peredeluvajem_block figure figcaption a{
+	color: #418097;
+	font-family: arial;
+	font-weight: bold;
+}
+
+button.btn-product-button{
+	width: 100px;
+	background: #e19200;
+	font-family: arial;
+	font-weight: bold;
+}
+
+.price-text{
+	font-family: arial;
+	font-weight: bold;
+	line-height: 37px;
+	text-align: center;
+	width: 100%;
+	margin: 10px 0 0 0;
+	color: #418097;
+}
+
+button.btn-product-button:before{
+	background: none;
+}
+
+.product .span4{
+	padding: 0;
+}
+
+.text-arial{
+	font-family: arial;
+}
+
+.cut-content table{
+	width: 100%;
+}
+
+.select-control{
+	margin: 10px 0 0 0;
+	float: left;
+}
+
+.select-control select{
+	margin: 0 0 0 10px;
+}
+
+.breadcrumbs-area {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 23px 0 11px;
+}
+.breadcrumbs-area .breadcrumbs {
+    float: right;
+    margin: 0 -10px 0 0;
+}
+.breadcrumbs {
+    color: #292929;
+    font: 12px/15px Georgia,'Times New Roman',Times,serif;
+    list-style: none outside none;
+    margin: 0 0 40px 20px;
+    padding: 0;
+}
+.breadcrumbs li {
+    background: url("img/arrows.png") no-repeat scroll 0 -22px rgba(0, 0, 0, 0);
+    float: left;
+    padding: 0 9px 0 13px;
+    line-height: 15px;
+}
+.breadcrumbs li:first-child {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding-left: 0;
+}
+
+#menu-item-75 a:hover{
+	color: #005580;
 }
